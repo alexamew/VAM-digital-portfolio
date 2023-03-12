@@ -23,19 +23,50 @@
         
     </section>
     <section class="alexa">
-        <div class="logo-val">
+        <div class="logo-alexa">
             <img src="assets/imgs/Alexa.png" alt="Val" class="logo-alexa">
+        <a class="page-alexa" href="file:///Users/alexandra.moraru/VAM-digital-portfolio/alexa.html">Click!</a>
+
+
         </div>
 
     </section>
     <section class="mo">
-        <div class="logo-val">
+        <div class="logo-mo">
             <img src="assets/imgs/Mo.png" alt="Val" class="logo-mo">
         </div>
 
     </section>
     <footer class="footer">
+        <button class="open-button" onclick="openForm()">Open Form</button>
 
+        <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+        <h1>Send</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="msg"><b>Message</b></label>
+        <input type="message" placeholder="Enter Message" name="msg" required>
+
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+    </div>
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+    <section>
+        
+        <a class="github" href="https://github.com/alexamew/VAM-digital-portfolio">Check out our Github link!</a>
+    </section>
     </footer>
 </body>
 </html>

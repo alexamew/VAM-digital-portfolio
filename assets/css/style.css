@@ -7,8 +7,9 @@ body {
   } 
 
 header {
-  /* background-image: url("https://wallpapers.com/images/featured-full/light-orange-background-5us8jzp69w7wcd76.jpg"); */
+  background-image: linear-gradient(45deg,rgba(187, 152, 117,.3) 30%,#b57a45 90%);
   margin-top: 20px;
+  display: inline !important;
   padding-bottom: 10px;
   background-color: #ffffff; ;
   border-bottom: 2px solid #e9e1e1; 
@@ -45,7 +46,7 @@ header {
 
 
   .alexa {
-    background-image: linear-gradient(45deg,rgb(141, 138, 142) 30%,#4f4b52 90%);
+    background-image: linear-gradient(45deg,rgba(187, 152, 117,.3) 30%,#b57a45 90%);
     height: 300px;
     padding: 1em; 
         border-radius: 20px;
@@ -60,7 +61,7 @@ header {
   
   }
   .mo {
-    background-image: linear-gradient(45deg,rgb(141, 138, 142) 30%,#4f4b52 90%);
+    background-image: linear-gradient(45deg,rgba(187, 152, 117,.3) 30%,#b57a45 90%);
     height: 300px;
     padding: 1em;
         border-radius: 20px;
@@ -74,6 +75,62 @@ header {
     margin-right: auto;
   
   }
+  .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }  
+
+  .form-container input[type=text], .form-container input[type=message] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=message]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8; 
+  }
+  .form-container .cancel {
+    background-color: red;
+  }
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
 
   .footer {
     /* background-image: linear-gradient(45deg,rgb(141, 138, 142) 30%,#4f4b52 90%); */
@@ -82,4 +139,17 @@ header {
         border-radius: 20px;
         margin: 1em 0;
     color: #fff;
+
+  }
+
+  .github {
+			position: relative;
+			top: 150px; /* change this value to move the text lower or higher */
+		
+  }
+
+  .page-alexa {
+    position: relative;
+    text-align: right;
+
   }
